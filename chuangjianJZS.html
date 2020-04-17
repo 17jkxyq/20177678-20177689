@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <title>家族树</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+    <script type="text/javascript" src="d3.v3.min.js"></script>
+    <script type="text/javascript" src="tree.js"></script>
+    
+    <div class="bg-container"></div>
+    <div class="flex-container">
+        <div class="flex-item1">
+            <textarea cols="47" rows="22" id="user" placeholder="请输入内容"></textarea><br>
+        </div>
+        <div class="flex-item2">
+            <button id="textbutton" onclick="chase()">建立家族树</button>
+        </div>
+        <div class="flex-item3">
+            <p id="tree">家族树</p>
+        </div>
+        <div class="flex-item4">
+            <input type=button value=刷新 onclick="location.reload()" id="button">
+        </div>
+    </div>
+</body>
+</html>
